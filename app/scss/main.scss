@@ -16,12 +16,57 @@ body {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
   background-color: $primary-color;
+  overflow: hidden;
 }
 
 .container {
   max-width: 98rem;
   height: 100vh;
   margin: 0 auto;
+
+  .logo-container {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 20;
+  }
+
+  .container-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../dist/images/bg-desktop.svg");
+  }
+
+  .intro-container {
+    color: $text-color;
+    line-height: 1.4;
+    
+    h1 {
+      font-weight: 700;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .button{
+      margin-top: 2rem;
+      color: $primary-color;
+      padding: 1.6rem 7.6rem;
+      border-radius: 6rem;
+      border: none;
+      outline: none;
+      box-shadow: 1rem 1rem 3rem 0 darken($primary-color, 20);
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 1rem 1rem 3rem 0 darken($primary-color, 40);
+      }
+    }
+  }
 }
 
 .row {
@@ -29,6 +74,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 8rem;
 }
 
 .col-1 {
@@ -37,6 +83,8 @@ body {
 
 .col-2 {
   width: 50%;
+  padding-right: 2rem;
+  z-index: 10;
 }
 
 img {
@@ -48,8 +96,4 @@ img {
     font-family: 'Poppins', sans-serif;
     }
 
-.logo-container {
-  margin-top: 4rem;
-}
-
-  @import "media";
+@import "media";

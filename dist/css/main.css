@@ -47,24 +47,58 @@ html {
 body {
   font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
-  background-color: #674baf; }
+  background-color: #674baf;
+  overflow: hidden; }
 
 .container {
   max-width: 98rem;
   height: 100vh;
   margin: 0 auto; }
+  .container .logo-container {
+    margin-top: 4rem;
+    position: relative;
+    z-index: 20; }
+  .container .container-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../dist/images/bg-desktop.svg"); }
+  .container .intro-container {
+    color: white;
+    line-height: 1.4; }
+    .container .intro-container h1 {
+      font-weight: 700; }
+    .container .intro-container p {
+      line-height: 1.6; }
+    .container .intro-container .button {
+      margin-top: 2rem;
+      color: #674baf;
+      padding: 1.6rem 7.6rem;
+      border-radius: 6rem;
+      border: none;
+      outline: none;
+      box-shadow: 1rem 1rem 3rem 0 #3d2c68;
+      cursor: pointer; }
+      .container .intro-container .button:hover {
+        box-shadow: 1rem 1rem 3rem 0 #130e20; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 8rem; }
 
 .col-1 {
   width: 100%; }
 
 .col-2 {
-  width: 50%; }
+  width: 50%;
+  padding-right: 2rem;
+  z-index: 10; }
 
 img {
   max-width: 100%; }
@@ -72,6 +106,3 @@ img {
 h1 {
   font-size: 3.8rem;
   font-family: 'Poppins', sans-serif; }
-
-.logo-container {
-  margin-top: 4rem; }
