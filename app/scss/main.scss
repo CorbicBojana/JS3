@@ -14,7 +14,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $primary-color;
 }
 
 .container {
@@ -44,6 +45,11 @@ img {
   
   h1 {
     font-size: 3.8rem;
-  }
+    font-family: 'Poppins', sans-serif;
+    }
+
+.logo-container {
+  margin-top: 4rem;
+}
 
   @import "media";
